@@ -1,0 +1,47 @@
+body {
+    background-color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    user-select: none;
+    font-size: 32pt;
+    font-weight: normal;
+}
+#titleDice {
+    width: 23pt;
+}
+.title-span {
+    margin-right: -4px;
+    margin-left: -4px;
+}
+.button-container {
+    margin: 100pt;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#generate-button {
+    width: 64pt;
+    height: 64pt;
+    border-radius: 50%;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+}
+
+.gradient-button {
+    background: linear-gradient(135deg, #ffa700  , #ff4f00);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 1.0s ease;
+}
+/* .gradient-button:hover {
+    background: linear-gradient(90deg, #ffa700, #ff4f00);
+} */

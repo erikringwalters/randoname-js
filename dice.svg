@@ -1,0 +1,13 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="enable-background:new 0 0 478.703 478.703;" fill="none"
+  stroke="white" stroke-width="20" stroke-opacity="1" width="300" height="300" stroke-linejoin="round">
+  <polygon class="hexagon" points="290,150 225,280 75,280 10,150 75,20 225,20" />
+
+  <polygon class="triangle" points="200,225 75,150 200,75" />
+  <polygon class="triangle" points="75,20 75,150 200,75" />
+  <polygon class="triangle" points="200,225 75,150 75,280" />
+  <polygon class="triangle" points="200,225 290,150 200,75" />
+
+  <line class="line" x1="225" y1="20" x2="200" y2="75" />
+  <line class="line" x1="200" y1="225" x2="225" y2="280" />
+  <line class="line" x1="10" y1="150" x2="75" y2="150" />
+</svg>

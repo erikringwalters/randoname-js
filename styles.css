@@ -15,17 +15,17 @@ body {
 h1 {
     color: white;
     user-select: none;
-    font-size: 48pt;
+    font-size: 32pt;
     font-weight: normal;
 }
 
 #titleDice {
-    width: 34pt;
+    width: 23pt;
 }
 
 .title-span {
-    margin-right: -8px;
-    margin-left: -8px;
+    margin-right: -4px;
+    margin-left: -4px;
 }
 
 .inputDiv {

@@ -7,21 +7,17 @@ body {
 h1 {
     color: white;
     user-select: none;
-    font-size: 32pt;
+    font-size: 48pt;
     font-weight: normal;
 }
 
 #titleDice {
-    width: 23pt;
+    width: 34pt;
 }
 
 .title-span {
-    margin-right: -4px;
-    margin-left: -4px;
-}
-
-.button-container {
-    margin: 100pt;
+    margin-right: -8px;
+    margin-left: -8px;
 }
 
 .center {
@@ -32,9 +28,23 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+.inputDiv {
+    margin-top: 100pt;
+    margin-bottom: 50pt;
+}
+
+.nameInput {
+    text-align: center;
+    font-size: 14pt;
+    height: 30pt;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+}
+
 @property --myColor1 {
     syntax: '<color>';
-    initial-value: #dd8800;
+    initial-value: #eebb00;
     inherits: false;
 }
 
@@ -42,6 +52,13 @@ h1 {
     syntax: '<color>';
     initial-value: #bb4400;
     inherits: false;
+}
+
+.button-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin: 0px;
 }
 
 #generate-button {
@@ -61,5 +78,5 @@ h1 {
 
 .gradient-button:hover {
     --myColor1: #bb4400;
-    --myColor2: #dd8800;
+    --myColor2: #eebb00;
 }

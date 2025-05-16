@@ -2,6 +2,7 @@ body {
     background-color: #181A1B;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    touch-action: manipulation;
 }
 
 .center {
@@ -24,8 +25,8 @@ h1 {
 }
 
 .title-span {
-    margin-right: -4px;
-    margin-left: -4px;
+    margin-right: -5px;
+    margin-left: -5px;
 }
 
 .inputDiv {
@@ -44,13 +45,13 @@ h1 {
 
 @property --myColor1 {
     syntax: '<color>';
-    initial-value: #eebb00;
+    initial-value: #ddaa00;
     inherits: false;
 }
 
 @property --myColor2 {
     syntax: '<color>';
-    initial-value: #bb4400;
+    initial-value: #ff6600;
     inherits: false;
 }
 
@@ -66,6 +67,15 @@ h1 {
     height: 64pt;
     border-radius: 50%;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .gradient-button {
@@ -77,6 +87,6 @@ h1 {
 }
 
 .gradient-button:hover {
-    --myColor1: #bb4400;
-    --myColor2: #eebb00;
+    --myColor1: #ff6600;
+    --myColor2: #ddaa00;
 }

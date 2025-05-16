@@ -1,5 +1,5 @@
 body {
-    background-color: #222222;
+    background-color: #181A1B;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -34,13 +34,13 @@ h1 {
 
 @property --myColor1 {
     syntax: '<color>';
-    initial-value: #ffa700;
+    initial-value: #dd8800;
     inherits: false;
 }
 
 @property --myColor2 {
     syntax: '<color>';
-    initial-value: #ff4f00;
+    initial-value: #bb4400;
     inherits: false;
 }
 
@@ -56,10 +56,10 @@ h1 {
     color: white;
     border: none;
     cursor: pointer;
-    transition: --myColor1 0.5s, --myColor2 0.5s;
+    transition: --myColor1 1.0s, --myColor2 1.0s;
 }
 
 .gradient-button:hover {
-    --myColor1: #ff4f00;
-    --myColor2: #ffa700;
+    --myColor1: #bb4400;
+    --myColor2: #dd8800;
 }

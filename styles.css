@@ -87,10 +87,10 @@ h1 {
     transition: --myColor1 1.0s, --myColor2 1.0s;
 }
 
-.gradientButton:hover {
+/* .gradientButton:hover {
     --myColor1: #ff6600;
     --myColor2: #ddaa00;
-}
+} */
 
 .inline {
     display: inline-block;

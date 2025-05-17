@@ -60,11 +60,16 @@ h1 {
     inherits: false;
 }
 
-.button-container {
+.container {
+    display: flex;
+}
+
+.buttonContainer {
     position: absolute;
     top: 70%;
     left: 50%;
     margin: 0px;
+    width: 100%
 }
 
 #generateButton {
@@ -85,6 +90,26 @@ h1 {
 .gradientButton:hover {
     --myColor1: #ff6600;
     --myColor2: #ddaa00;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.arrow {
+    color: white;
+    font-size: 32pt;
+    margin-top: -20pt;
+    cursor: pointer;
+    width: 40pt;
+}
+
+#prev {
+    margin-right: 70pt;
+}
+
+#next {
+    margin-left: 70pt;
 }
 
 .noselect {

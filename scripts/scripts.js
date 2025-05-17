@@ -1,29 +1,78 @@
+let names = []
+let nameIndex = 0;
+let namesMax = 10000;
+
 document.addEventListener('DOMContentLoaded', () => {
     const ttl_dice = document.getElementById('titleDice');
     const gen_btn = document.getElementById('generateButton');
     const nm_ipt = document.getElementById('nameInput');
+    const prev_btn = document.getElementById('prev');
+    const next_btn = document.getElementById('next');
+    let name = "";
 
-    if (ttl_dice) {
-        ttl_dice.addEventListener('click', () => {
-            nm_ipt.value = generateName()
-        });
-    } else {
-        console.log("couldn't find titleDice")
-    }
-    
-    if (gen_btn) {
-        gen_btn.addEventListener('click', () => {
-            nm_ipt.value = generateName()
-        });
-    } else {
-        console.log("couldn't find generateButton")
-    }
+    prev_btn.style.visibility = "hidden";
+    next_btn.style.visibility = "hidden";
 
+    ttl_dice.addEventListener('click', () => {
+        name = generateName()
+        prev_btn.style.visibility = nameIndex > 0 ? "visible" : "hidden";
+        nm_ipt.value = name;
+    });
+
+    gen_btn.addEventListener('click', () => {
+        name = generateName();
+        prev_btn.style.visibility = nameIndex > 0 ? "visible" : "hidden";
+        nm_ipt.value = name;
+    });
+
+    prev_btn.addEventListener('click', () => {
+        name = previous();
+        prev_btn.style.visibility = name && nameIndex > 0 ? "visible" : "hidden";
+        next_btn.style.visibility = "visible";
+        if (name) {
+            nm_ipt.value = name;
+        }
+
+    });
+
+    next_btn.addEventListener('click', () => {
+        name = next();
+        next_btn.style.visibility = name ? "visible" : "hidden";
+        prev_btn.style.visibility = "visible";
+        nm_ipt.value = name;
+
+    });
 });
+
 
 function generateName() {
     let name = ""
-    name += begs[Math.floor(Math.random() * begs.length)]
-    name += ends[Math.floor(Math.random() * ends.length)]
-    return name
+    name += begs[Math.floor(Math.random() * begs.length)];
+    name += ends[Math.floor(Math.random() * ends.length)];
+    if (names.length >= namesMax) {
+        names.shift();
+    }
+    names.push(name);
+    nameIndex = names.length - 1;
+    // console.log(nameIndex);
+    return name;
+}
+
+function previous() {
+    if (nameIndex > 0) {
+        nameIndex--;
+        // console.log(nameIndex);
+        return names[nameIndex];
+    }
+    return "";
+}
+
+function next() {
+    if (nameIndex < names.length - 1) {
+        nameIndex++;
+        // console.log(nameIndex);
+    } else {
+        return "";
+    }
+    return names[nameIndex];
 }

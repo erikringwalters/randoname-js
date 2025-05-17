@@ -44,6 +44,9 @@ h1 {
     outline: none;
     border: none;
 }
+#nameInput::placeholder {
+    color:#CCCCCC;
+}
 
 @property --myColor1 {
     syntax: '<color>';

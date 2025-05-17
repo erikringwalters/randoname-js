@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function generateName() {
     let name = ""
     name += begs[Math.floor(Math.random() * begs.length)]
-    name += mids[Math.floor(Math.random() * mids.length)]
     name += ends[Math.floor(Math.random() * ends.length)]
     return name
 }

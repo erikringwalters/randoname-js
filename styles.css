@@ -21,7 +21,8 @@ h1 {
 }
 
 #titleDice {
-    width: 23pt;
+    width: 24pt;
+    vertical-align: -1px;
 }
 
 .title-span {
@@ -34,7 +35,7 @@ h1 {
     margin-bottom: 50pt;
 }
 
-.nameInput {
+#nameInput {
     text-align: center;
     font-size: 14pt;
     height: 30pt;
@@ -62,23 +63,14 @@ h1 {
     margin: 0px;
 }
 
-#generate-button {
+#generateButton {
     width: 64pt;
     height: 64pt;
     border-radius: 50%;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);
-    user-select: none;
-    touch-action: manipulation;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
-.gradient-button {
+.gradientButton {
     background: linear-gradient(135deg, var(--myColor1), var(--myColor2));
     color: white;
     border: none;
@@ -86,7 +78,25 @@ h1 {
     transition: --myColor1 1.0s, --myColor2 1.0s;
 }
 
-.gradient-button:hover {
+.gradientButton:hover {
     --myColor1: #ff6600;
     --myColor2: #ddaa00;
+}
+
+.noselect {
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
 }

@@ -1,5 +1,5 @@
-var ends = {
-  basic: [
+var ends = [ // {
+  // basic: [
     "ou", "abe", "i", "mub", "och", "ode", "cer", "mor", "phine", "er", "ik", "po", "oke", "il", "ine", "co",
     "ver", "ame", "ien", "eck", "art", "tor", "um", "brum", "ello", "ith", "our", "outh", "ruff", "pur", "ette", "truk",
     "wor", "ord", "wim", "bur", "pul", "ry", "lub", "dine", "ters", "ey", "un", "ex", "ta", "cy", "mar", "io",
@@ -7,30 +7,30 @@ var ends = {
     "urt", "eip", "cho", "oze", "uz", "plur", "an", "eke", "eak", "in", "boo", "ox", "lexe", "pil", "wil", "be",
     "eign", "zol", "oel", "mor", "frub", "row", "ink", "dae", "ub", "lo", "om", "lip", "chren", "pho", "blur", "crul",
     "kar", "gor", "rill", "a", "blu", "plet", "cro", "fle", "bab", "chur", "ake", "nada", "ensa", "ight", "aze", "ive",
-    "me", "it", "amus", "flur", "dil", "omie", "let", "ave", "aye", "idle", "ow", "no", "ye", "me", "u", "one"
-  ],
+    "me", "it", "amus", "flur", "dil", "omie", "let", "ave", "aye", "idle", "ow", "no", "ye", "me", "u", "one",
+  // ],
 
-  orc: [
+  // orc: [
     "uch", "ub", "lub", "nub", "ub", "ob", "u", "op", "mo", "om", "el", "ov", "os", "al", "wu", "ej", "je", "jer",
     "kom", "go", "aub", "or", "ah", "ag", "ig", "lug", "bug", "fug", "mug", "ush", "ij", "un", "cu", "pok", "ure", "um",
     "for", "ork", "bul", "owl", "nul", "hul", "chul", "cho", "oh", "fo", "ukle", "meb", "tul", "olk", "wul", "se", "il", "uke",
     "bel", "elt", "ult", "ulk", "bil", "cul", "orl", "dol", "crol", "ual", "nol", "mol", "khul", "old", "er", "or", "it", "up",
-    "uj", "ej", "kuj", "kej", "kug", "keg", "ech", "oz", "wop", "al", "mul", "tic", "ur", "ob", "ab", "ba", "chu", "mu"
-  ],
+    "uj", "ej", "kuj", "kej", "kug", "keg", "ech", "oz", "wop", "al", "mul", "tic", "ur", "ob", "ab", "ba", "chu", "mu",
+  // ],
 
-  elf: [
+  // elf: [
     "nor", "hor", "rie", "ire", "ras", "ra", "rod", "od", "oth", "roth", "ang", "hel", "red", "leg", "gon", "bel", "born", "ian",
     "bor", "gorm", "dan", "fin", "uf", "aer", "eth", "thor", "ion", "thel", "che", "ah", "hil", "ell", "los", "mak", "len", "el",
     "ire", "amme", "enwe", "elu", "nel", "itch", "ye", "ene", "dhil", "eol", "stor", "anor", "ilas", "le", "ak", "op", "iss", "und",
     "ur", "ae", "ce", "ie", "ile", "wi", "qu", "psy", "yel", "hyr", "aro", "am", "an", "en", "bo", "eb", "ze", "ew",
-    "ig", "ige", "es", "ese", "ex", "me", "ike", "e", "ero", "yn", "sau", "esh", "ash", "ish", "rom", "mon", "cye", "cae"
-  ],
+    "ig", "ige", "es", "ese", "ex", "me", "ike", "e", "ero", "yn", "sau", "esh", "ash", "ish", "rom", "mon", "cye", "cae",
+  // ],
   
-  human: [
+  // human: [
     "pan", "da", "hai", "res", "deol", "dol", "del", "ta", "tim", "my", "tur", "ner", "ya", "fur", "nan", "el", "ine", "ne", "bur",
     "ger", "gus", "lus", "ius", "on", "or", "and", "tian", "lav", "ox", "us", "tus", "uc", "i", "vu", "u", "nus", "ol", "tan",
     "nis", "on", "orn", "dut", "dur", "von", "tel", "wat", "ron", "ren", "dez", "vous", "ris", "spri", "red", "ard", "ur", "url", "arl",
     "mer", "hug", "rul", "us", "if", "y", "ou", "are", "rea", "din", "g", "thi", "s", "i", "hav", "e", "per", "ish", "ed", "l",
-    "ol", "pub", "eg", "ug", "esh", "ech", "ush", "esh", "nil", "kog", "tud", "tun", "ish", "ush", "kre", "ol", "bay", "reb", "ro"
+    "ol", "pub", "eg", "ug", "esh", "ech", "ush", "esh", "nil", "kog", "tud", "tun", "ish", "ush", "kre", "ol", "bay", "reb", "ro",
   ]
-}
+// }

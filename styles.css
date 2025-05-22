@@ -44,8 +44,9 @@ h1 {
     outline: none;
     border: none;
 }
+
 #nameInput::placeholder {
-    color:#CCCCCC;
+    color: #CCCCCC;
 }
 
 @property --myColor1 {
@@ -86,11 +87,6 @@ h1 {
     cursor: pointer;
     transition: --myColor1 1.0s, --myColor2 1.0s;
 }
-
-/* .gradientButton:hover {
-    --myColor1: #ff6600;
-    --myColor2: #ddaa00;
-} */
 
 .inline {
     display: inline-block;

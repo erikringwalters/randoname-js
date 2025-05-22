@@ -51,14 +51,12 @@ function generateName() {
     }
     names.push(name);
     nameIndex = names.length - 1;
-    // console.log(nameIndex);
     return name;
 }
 
 function previous() {
     if (nameIndex > 0) {
         nameIndex--;
-        // console.log(nameIndex);
         return names[nameIndex];
     }
     nameIndex = 0;
@@ -68,10 +66,8 @@ function previous() {
 function next() {
     if (nameIndex < names.length - 1) {
         nameIndex++;
-        // console.log(nameIndex);
-    } else {
-        nameIndex = names.length;
-        return "";
+        return names[nameIndex];
     }
-    return names[nameIndex];
+    nameIndex = names.length;
+    return "";
 }

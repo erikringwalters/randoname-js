@@ -13,16 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
     prev_btn.style.visibility = "hidden";
     next_btn.style.visibility = "hidden";
 
-    ttl_dice.addEventListener('click', () => {
-        name = generateName()
-        prev_btn.style.visibility = nameIndex > 0 ? "visible" : "hidden";
-        nm_ipt.value = name;
-    });
-
-    gen_btn.addEventListener('click', () => {
-        name = generateName();
-        prev_btn.style.visibility = nameIndex > 0 ? "visible" : "hidden";
-        nm_ipt.value = name;
+    [ttl_dice, gen_btn].forEach(function (element) {
+        element.addEventListener('click', () => {
+            name = generateName()
+            prev_btn.style.visibility = nameIndex > 0 ? "visible" : "hidden";
+            next_btn.style.visibility = "visible";
+            nm_ipt.value = name;
+        })
     });
 
     prev_btn.addEventListener('click', () => {
@@ -46,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function generateName() {
-    let name = ""
+    var name = ""
     name += begs[Math.floor(Math.random() * begs.length)];
     name += ends[Math.floor(Math.random() * ends.length)];
     if (names.length >= namesMax) {
@@ -64,7 +61,8 @@ function previous() {
         // console.log(nameIndex);
         return names[nameIndex];
     }
-    return "";
+    nameIndex = 0;
+    return names[0];
 }
 
 function next() {
@@ -72,6 +70,7 @@ function next() {
         nameIndex++;
         // console.log(nameIndex);
     } else {
+        nameIndex = names.length;
         return "";
     }
     return names[nameIndex];
